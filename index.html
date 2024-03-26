@@ -1,88 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invoice Generator</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            border: 1px solid #ccc;
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-        }
-        .form-group {
-            margin-bottom: 20px;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        .form-group input {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .form-group textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            resize: none;
-        }
-        .btn {
-            background-color: #007bff;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Invoice Generator</h1>
-        <form id="invoiceForm">
-            <div class="form-group">
-                <label for="clientName">Client Name:</label>
-                <input type="text" id="clientName" name="clientName" required>
-            </div>
-            <div class="form-group">
-                <label for="invoiceDate">Invoice Date:</label>
-                <input type="date" id="invoiceDate" name="invoiceDate" required>
-            </div>
-            <div class="form-group">
-                <label for="dueDate">Due Date:</label>
-                <input type="date" id="dueDate" name="dueDate" required>
-            </div>
-            <div class="form-group">
-                <label for="invoiceItems">Invoice Items:</label>
-                <textarea id="invoiceItems" name="invoiceItems" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn">Generate Invoice</button>
-        </form>
-    </div>
+<html>
 
-    <script>
-        document.getElementById('invoiceForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            // You can implement the functionality to generate the invoice here
-            // For simplicity, let's just log the form data for now
-            const formData = new FormData(this);
-            for (var pair of formData.entries()) {
-                console.log(pair[0] + ': ' + pair[1]);
-            }
-        });
-    </script>
+<head>
+  <meta charset="utf-8">
+  <title>Invoice</title>
+</head>
+
+<body>
+  <p>Visit www.v88.co.uk <a href="https://www.v88.co.uk">
+  <script src="function.js"></script>
+  <script src="driver.js"></script>
 </body>
+
 </html>
