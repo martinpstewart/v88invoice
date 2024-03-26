@@ -123,7 +123,7 @@ window.function = function (html, fileName, format, zoom, orientation, margin, b
    </td>
   </tr>
 </table></div></center>
-"
+";
 
 	// HTML THAT IS RETURNED AS A RENDERABLE URL
 	const originalHTML = `
