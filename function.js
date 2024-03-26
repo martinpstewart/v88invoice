@@ -1,11 +1,5 @@
 window.function = function (html) {
-	// FIDELITY MAPPING
-	const fidelityMap = {
-		low: 1,
-		standard: 1.5,
-		high: 2,
-	};
-
+	
 	// DYNAMIC VALUES
 	html = html.value ?? "<!DOCTYPE html>
 <html lang="en">
