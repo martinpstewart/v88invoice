@@ -7,7 +7,7 @@ window.function = function (html, fileName, format, zoom, orientation, margin, b
 	};
 
 	// DYNAMIC VALUES
-	html = html.value ?? "<html><b>Hello World</b></html>";
+	html = html.value ?? "non set";
 	fileName = fileName.value ?? "file";
 	format = format.value ?? "a4";
 	zoom = zoom.value ?? "1";
