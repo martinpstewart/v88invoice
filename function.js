@@ -131,26 +131,7 @@ window.function = function (html) {
 	  </div>
 	  <script>
 	  document.getElementById('download').addEventListener('click', function() {
-		var element = document.getElementById('content');
-		var button = this;
-		button.innerText = 'Downloading...';
-		button.className = 'downloading';
-  
-		var opt = {
-		pagebreak: { mode: ['css'], before: ${JSON.stringify(breakBefore)}, after: ${JSON.stringify(breakAfter)}, avoid: ${JSON.stringify(breakAvoid)} },
-		margin: ${margin},
-		filename: '${fileName}',
-		html2canvas: {
-		  useCORS: true,
-		  scale: ${quality}
-		},
-		jsPDF: {
-		  unit: 'px',
-		  orientation: '${orientation}',
-		  format: [${finalDimensions}],
-		  hotfixes: ['px_scaling']
-		}
-		};
+		
 		html2pdf().set(opt).from(element).toPdf().get('pdf').then(function(pdf) {
 		button.innerText = 'Done 🎉';
 		button.className = 'done';
