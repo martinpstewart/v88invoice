@@ -8,7 +8,7 @@
 			{
 				"name": "html",
 				"displayName": "HTML",
-				"type": "<b>helloWorld</b>"
+				"type": "html"
 			},
 			{
 				"name": "fileName",
